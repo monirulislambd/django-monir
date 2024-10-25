@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    </head>
+    <body>
+        <button class= 'btn btn-warning'>{{blog}}</button>
+        {% if length > 600 %}
+            {{blog}}
+        {% else %}
+            <h2 class=''>Blog length is less</h2>
+        {% endif %}
+        
+        <script src="" async defer></script>
+    </body>
+</html>

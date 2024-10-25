@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+    <title>Document</title>
+
+    
+    
+</head>
+<body class="body">
+    
+    <div class="menubar">
+        <ul>
+            <li><a href="/proshasok">Admin</a></li>
+            <li><a href="#">Monir</a></li>
+            <li><a href="#">Dina</a></li>
+            <li><a href="#">Ehan</a></li>
+            <li><a href="#">Mayan</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="#">Home</a></li>
+            
+
+        </ul>
+    </div>
+
+    <div class="cd__main">
+        <!-- Start DEMO HTML (Use the following code into your project)-->
+        <div class="wrapper">
+     <div class="sidebar">
+       <div class="sb-item-list">
+         <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Sidebar Item1</span></div>
+         <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Sidebar Item2</span></div>
+		 <div class="sb-item sb-menu"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">My Component</span>
+           <div class="sb-submenu">
+             <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text"><a href="{% url 'about' %}">About</a></span></div>
+			 <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text"><a href="{% url 'blog' %}">Blog</a></span></div>
+             
+           </div>
+         </div>
+         <div class="sb-item sb-menu"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Sidebar Menu</span>
+           <div class="sb-submenu">
+             <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Level 2</span></div>
+             <div class="sb-item sb-menu"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Level 2</span>
+               <div class="sb-submenu">
+                 <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Level 3</span></div>
+                 <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Level 3</span></div>
+                 <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Level 3</span></div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="sb-item"><i class="sb-icon fa fa-address-card"></i><span class="sb-text">Sidebar Item3</span></div>
+         <div class="btn-toggle-sidebar sb-item"><i class="sb-icon fa fa-angle-double-left"></i><span class="sb-text">Collapse Sidebar</span><i class="sb-icon fa fa-angle-double-right"></i></div>
+       </div>
+     </div>
+     <div class="main">
+      <div class = "sub-main1">
+        <h1>This is submain-1</h1>
+        {% block submain %} {% endblock submain %}
+      </div>
+      <div class = "col-12 bg-light">
+        <div class = "col-3"> Bootstrap-1</div>
+        <div class = "col-3">Bootstrap-1</div>
+        <div class = "col-3">Bootstrap-1</div>
+        <div class = "col-3">Bootstrap-1</div>
+      </div
+     </div>
+   </div>
+        <!-- END EDMO HTML (Happy Coding!)-->
+</div>
+      
+    
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'bootstrap.bundle.js' %}"></script>
+</body>
+</html>
